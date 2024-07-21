@@ -12,12 +12,9 @@ const sequelize = new Sequelize("multiuser_blog", "root", "root", {
     dialect: "mysql",
     port: 8889,
     define: {
-        timestamps: false,
+        timestamps: true,
     },
-    logging: false,
 });
-
-const TIMESTAMP = Sequelize.DataTypes.TIMESTAMP;
 
 const Users = sequelize.define("users", {
   user_id: {
