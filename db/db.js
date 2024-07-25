@@ -111,6 +111,10 @@ const User_Posts = sequelize.define("user_posts", {
   },
 });
 
+
+// Relationships
+/** For code clean code sake have relationships seperate **/
+
 // Create tables
 const connect = async () => {
   try {
