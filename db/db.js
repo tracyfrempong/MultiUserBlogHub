@@ -17,12 +17,6 @@ const sequelize = new Sequelize("multiuser_blog", "root", "root", {
 });
 
 const Users = sequelize.define("users", {
-  user_id: {
-    type: INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-  },
   username: {
     type: STRING,
     allowNull: false,
@@ -51,12 +45,6 @@ const Users = sequelize.define("users", {
 });
 
 const Categories = sequelize.define("categories", {
-    category_id: {
-      type: INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-    },
     category_name: {
       type: STRING,
       allowNull: false,
@@ -68,12 +56,6 @@ const Categories = sequelize.define("categories", {
   });
 
 const Posts = sequelize.define("posts", {
-  post_id: {
-    type: INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-  },
   user_id: {
     type: INTEGER,
     allowNull: false,
@@ -111,12 +93,6 @@ const Posts = sequelize.define("posts", {
 
 // Connect the Users and Posts tables
 const User_Posts = sequelize.define("user_posts", {
-  user_post_id: {
-    type: INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-  },
   user_id: {
     type: INTEGER,
     allowNull: false,
