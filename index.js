@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { Users, Posts, Categories } from "./db/db.js";
+import { Users, Posts, Categories } from "./db/index.js";
 
 const app = express();
 app.use(cors());

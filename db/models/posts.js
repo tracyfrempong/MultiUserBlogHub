@@ -1,5 +1,5 @@
 import { STRING, BOOLEAN, TEXT } from "sequelize";
-import sequelize from "../config/database.js";
+import sequelize from "../config/db_config.js";
 import Users from "./users.js";
 import Categories from "./categories.js";
 

@@ -1,4 +1,4 @@
-import sequelize from "./config/database.js";
+import sequelize from "./config/db_config.js";
 import Users from "./models/users.js";
 import Categories from "./models/categories.js";
 import Posts from "./models/posts.js";
