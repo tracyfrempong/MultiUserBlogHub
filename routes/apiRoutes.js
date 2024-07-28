@@ -13,7 +13,7 @@ router.put('/posts/:id', ensureToken, verifyToken, updatePost);
 router.delete('/posts/:id', ensureToken, verifyToken, deletePost);
 
 // Categories routes
-// get all categories
+// get all categories 
 router.get('/categories', getCategories);
 // create a new category
 router.post('/categories', ensureToken, verifyToken, createCategory);
