@@ -11,12 +11,12 @@ router.post('/register', registerUser);
 router.post('/login', loginUser);
 
 // get user profile
-router.get('/profile/:id', ensureToken, verifyToken, getUserProfile);
+router.get('/profile/getUser/:id', ensureToken, verifyToken, getUserProfile);
 
 // update user profile
-router.put('/profile/:id', ensureToken, verifyToken, updateUserProfile);
+router.put('/profile/updateUser/:id', ensureToken, verifyToken, updateUserProfile);
 
 // delete user account
-router.delete('/profile/:id', ensureToken, verifyToken, deleteUserProfile);
+router.delete('/profile/deleteUser/:id', ensureToken, verifyToken, deleteUserProfile);
 
 export default router;
